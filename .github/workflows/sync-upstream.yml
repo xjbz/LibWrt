@@ -32,7 +32,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          UPSTREAM_URL="https://github.com/VIKINGYFY/immortalwrt.git"
+          UPSTREAM_URL="https://github.com/LiBwrt/LibWrt.git"
           git remote add upstream "$UPSTREAM_URL" 2>/dev/null || git remote set-url upstream "$UPSTREAM_URL"
           # Refresh both sides explicitly.
           git fetch --prune --no-tags origin '+refs/heads/*:refs/remotes/origin/*'
